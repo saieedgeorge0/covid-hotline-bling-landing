@@ -4,19 +4,21 @@ html, body {
     padding: 0px;
 }
 
+
 a {
     color: black;
 }
 
 .byme {
-    position: absolute;
-    right: 200px;
-    bottom: -20px;
+    position: relative;
     font-weight: 200;
+    padding-left: 300px;
+    padding-top: 100px;
+    padding-bottom:15px;
 }
 
 .me {
-    padding: 70px 200px 80px;
+    padding: 200px 300px 80px;
 }
 
 .name {
@@ -26,9 +28,10 @@ a {
 }
 
 .description {
-    font-weight: 200;
-    font-size: 1.5em;
+    font-weight: 300;
+    font-size: 1.3em;
     margin-top: 40px;
+    line-height: 1.5em;
 }
 
 .projects {
@@ -36,12 +39,12 @@ a {
 }
 
 .project-contain {
-    padding: 0px 200px 0px;
+    padding: 0px 300px 0px;
 }
 
 .project {
     cursor: pointer;
-    padding: 20px 0 20px;
+    padding: 20px 20px 20px;
     border-top: solid 1px black;
 }
 
@@ -54,6 +57,8 @@ a {
     font-weight: 300;
     float: right;
     text-align: right;
+    position: relative;
+    top: 10px;
 }
 
 .p-description {
@@ -74,7 +79,7 @@ a {
 
 .image {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: gray 10px 10px 20px 1px;
 }
 
@@ -89,6 +94,7 @@ a {
 .project-contain:hover * {
     color: white;
 }
+
 
 #project1:hover {
     background: #DE598E;
