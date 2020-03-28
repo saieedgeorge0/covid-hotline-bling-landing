@@ -1,0 +1,103 @@
+html, body {
+    font-family: 'Montserrat';
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+}
+
+.byme {
+    position: absolute;
+    right: 200px;
+    bottom: -20px;
+    font-weight: 200;
+}
+
+.me {
+    padding: 70px 200px 80px;
+}
+
+.name {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 5em;
+}
+
+.description {
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.projects {
+    padding-bottom: 50px;
+}
+
+.project-contain {
+    padding: 0px 200px 0px;
+}
+
+.project {
+    cursor: pointer;
+    padding: 20px 0 20px;
+    border-top: solid 1px black;
+}
+
+.p-name {
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.p-subinfo {
+    font-weight: 300;
+    float: right;
+    text-align: right;
+}
+
+.p-description {
+    font-weight: 300;
+    padding-top: 40px;
+}
+
+.images {
+    padding-top: 20px;
+}
+
+.image-contain {
+    width: 33%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: gray 10px 10px 20px 1px;
+}
+
+.lastborder {
+    border-bottom: solid 1px black;
+}
+
+.expand-project {
+    display: none;
+}
+
+.project-contain:hover * {
+    color: white;
+}
+
+#project1:hover {
+    background: #DE598E;
+}
+
+#project2:hover {
+    background: #4AC6EB;
+}
+
+#project3:hover {
+    background: #28B65B;
+}
