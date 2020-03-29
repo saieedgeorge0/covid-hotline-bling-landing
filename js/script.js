@@ -8,6 +8,15 @@ $(document).ready(function() {
     $(".adown3").click(function() {
         $('html, body').animate({ scrollTop: $("#project3").offset().top }, 'slow');
     });
+    $(".botbutton").click(function() {
+        $('html, body').animate({ scrollTop: $("#project1").offset().top }, 'slow');
+    });
+    $(".apibutton").click(function() {
+        $('html, body').animate({ scrollTop: $("#project2").offset().top }, 'slow');
+    });
+    $(".vizbutton").click(function() {
+        $('html, body').animate({ scrollTop: $("#project3").offset().top }, 'slow');
+    });
 
     //     $(".project-contain").hover(function() {
     //         $(this).find(".project").css("padding", "30px 20px 30px");

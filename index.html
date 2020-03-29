@@ -22,10 +22,10 @@
 
 <body>
     <div class="me">
-        <span class="name"><strong style="color: black;">This is COVID Health Hotline Finder.</strong> <i style="background: linear-gradient(135deg, rgba(222,89,142,1) 0%, rgba(74,198,235,1) 45%, rgba(40,182,91,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="fas fa-phone"></i></span>
-        <p class="description">Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of
-            nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice intro description here blah blah. Lots of nice
-            intro description here blah blah. Lots of nice intro description here blah blah.</p>
+        <span class="name"><strong style="color: black;">This is COVID Health Hotline Finder.</strong> <i style="background: rgba(74,198,235,1); background: linear-gradient(135deg, rgba(222,89,142,1) 0%, rgba(74,198,235,1) 45%, rgba(40,182,91,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="fas fa-phone"></i></span>
+        <p class="description">You're feeling a little sick. You have questions about your symptoms. Maybe you want to ask your local health department about COVID-19, or maybe you're curious about the number of reported cases of the disease in your county. 
+            Not a problem - simply <a class="botbutton" href="#">use our bot</a> to get information about both! <br> <br> You saw <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a> released case data about COVID-19, and you want to easily access it for an application you're building. Easy - <a class="apibutton" href="#">use our API</a>! Feel free to fork it and build it out further for your needs.
+            <br><br> You want an easy, dynamic visualization that shows the number of cases/deaths related to COVID-19 by county. Check out <a class="vizbutton" href="#">our visualization</a>!</p>
         <i class="fas fa-angle-double-down adown adown1"></i>
     </div>
 
@@ -95,7 +95,7 @@
                 <span class="p-name">API</span>
                 <div class="expand-project">
                     <div class="p-description" id="description2">
-                        This will allow any user to access The New York Times' COVID-19 case/death data for the county of any zipcode.
+                        This will allow any user to access <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a>' COVID-19 case/death data for the county of any zipcode.
                         <br> Use it via a simple GET request, replacing the below zipcode with any zipcode:
                         <div class="code-chunk">
                             <code>http://covid-hotline-bling.herokuapp.com/zipcode/44106</code>
@@ -115,7 +115,8 @@
                 <span class="p-name">Visualization</span>
                 <div class="expand-project">
                     <div class="p-description">
-                        Website built for the University of Chicago's all-male A Cappella group, Run for Cover. First designed in Sketch, then created with HTML, CSS, and jQuery.
+                        You can view the cases/deaths by county using the map below. Data comes from <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a>, and it is automatically updated everytime they add new data. 
+                        Heatmap was generated using logarathmic transformation of the data, in order to generate a better visual despite the presence of any outliers.
                     </div>
                 </div>
             </div>
