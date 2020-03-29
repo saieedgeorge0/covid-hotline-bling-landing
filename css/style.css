@@ -153,6 +153,7 @@
         padding: 10px;
         margin-bottom: 20px;
         background: black;
+        text-align: left;
     }
     
     .messages {
@@ -505,6 +506,9 @@
         }
         code {
             padding: 5px;
+        }
+        .p-name {
+            font-weight: 700;
         }
         .description,
         .p-description,
