@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" href="img/favicon.png">
-    <meta name="description" content="COVID Hotline Bling Landing Page" />
-    <meta property="og:title" content="COVID Hotline Bling Landing Page" />
+    <meta name="description" content="COVID Health Hotline Finder" />
+    <meta property="og:title" content="COVID Health Hotline Finder" />
     <!-- <meta property="og:url" content="http://starter.georgesaieed.com/" />
         <meta property="og:image" content="img/logo.png" /> -->
-    <meta property="og:description" content="COVID Hotline Bling Landing Page" />
-    <meta property="og:site_name" content="COVID Hotline Bling Landing Page" />
-    <title>COVID Hotline Bling</title>
+    <meta property="og:description" content="COVID Health Hotline Finder" />
+    <meta property="og:site_name" content="COVID Health Hotline Finder" />
+    <title>COVID Health Hotline Finder</title>
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -64,6 +64,29 @@
                         Twilio, Node.JS, and Heroku. Code can be found <a href="https://github.com/saieedgeorge0/covid-hotline-bling" target="_blank">here</a>.
                     </div>
                 </div>
+                <div class="chat2">
+                    <div class="mine messages">
+                        <div class="message last">
+                            Leggo
+                        </div>
+                    </div>
+                    <div class="yours messages">
+                        <div class="message last">
+                            Hi! I can provide you with case/death numbers for your county as well as information for your nearest public health center. What's your zipcode? Once you let us know, please wait - it can take a few moments to pull the data.
+                        </div>
+                    </div>
+                    <div class="mine messages">
+                        <div class="message last">
+                            15108
+                        </div>
+                    </div>
+                    <div class="yours messages last">
+                        <div class="message last">
+                            As of 2020-03-27, there are 158 recorded cases and 2 recorded deaths in your county (data from NYTimes). Your nearest county health center is the Allegheny County Health Department. You can call them at this number: 412-687-2243, or email them/visit their
+                            website here: http://www.achd.net (Information from NACCHO). Type "clear" to enter a new zip code.
+                        </div>
+                    </div>
+                </div>
             </div>
             <i class="fas fa-angle-double-down adown adown2"></i>
         </div>
@@ -71,7 +94,7 @@
             <div class="project">
                 <span class="p-name">API</span>
                 <div class="expand-project">
-                    <div class="p-description">
+                    <div class="p-description" id="description2">
                         This will allow any user to access The New York Times' COVID-19 case/death data for the county of any zipcode.
                         <br> Use it via a simple GET request, replacing the below zipcode with any zipcode:
                         <div class="code-chunk">
@@ -79,7 +102,7 @@
                         </div>
                         <br>It will return a JSON object with the FIPS code for the county, number of cases, deaths, and the last time the data was updated:
                         <div class="code-chunk">
-                            <code>{"fips":"39035","cases":330,"deaths":2,"recentdate":"2020-03-27"}</code>
+                            <code>{"fips":"39035", "cases":330, "deaths":2, "recentdate":"2020-03-27"}</code>
                         </div>
                         <br> Built with Node.JS and Heroku. Code can be found <a href="https://github.com/saieedgeorge0/covid-hotline-bling" target="_blank">here</a>.
                     </div>
