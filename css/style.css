@@ -503,6 +503,11 @@
         code {
             padding: 5px;
         }
+        .description,
+        .p-description,
+        #pd1 {
+            font-weight: 400;
+        }
     }
     
     @media (max-width: 464px) {
