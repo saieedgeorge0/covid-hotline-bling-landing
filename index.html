@@ -24,7 +24,7 @@
     <div class="me">
         <span class="name"><strong style="color: black;">This is COVID Health Hotline Finder.</strong> <i style="background: rgba(74,198,235,1); background: linear-gradient(135deg, rgba(222,89,142,1) 0%, rgba(74,198,235,1) 45%, rgba(40,182,91,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="fas fa-phone"></i></span>
         <p class="description">You're feeling a little sick. You have questions about your symptoms. Maybe you want to ask your local health department about COVID-19, or maybe you're curious about the number of reported cases of the disease in your county. 
-            Not a problem - simply <a class="botbutton" href="#">use our bot</a> to get information about both! <br> <br> You saw <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a> released case data about COVID-19, and you want to easily access it for an application you're building. Easy - <a class="apibutton" href="#">use our API</a>! Feel free to fork it and build it out further for your needs.
+            Not a problem - simply <a class="botbutton" href="#">use our bot</a> to get information about both! <br> <br> You saw <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target="_blank">The New York Times</a> released case data about COVID-19, and you want to easily access it for an application you're building. Easy - <a class="apibutton" href="#">use our API</a>! Feel free to fork it and build it out further for your needs.
             <br><br> You want an easy, dynamic visualization that shows the number of cases/deaths related to COVID-19 by county. Check out <a class="vizbutton" href="#">our visualization</a>!</p>
         <i class="fas fa-angle-double-down adown adown1"></i>
     </div>
@@ -59,7 +59,7 @@
                 <div class="expand-project">
                     <div class="p-description" id="pd1">
                         Text "leggo" to <a href="tel:2162843839">(216)-284-3839</a> (or anything, really - this is just more fun). After doing so, you will be prompted to enter a zip code. Upon entering a zip code, you will receive data regarding the
-                        current number of COVID-19 cases and deaths most recently reported by <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a> for the county associated with that zip code. You will also receive
+                        current number of COVID-19 cases and deaths most recently reported by <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target="_blank">The New York Times</a> for the county associated with that zip code. You will also receive
                         information related to the Local Health Department closest to that zip code (data from <a href="https://www.naccho.org/membership/lhd-directory?searchType=standard&lhd-state=ID#card-filter" target="_blank">NACCHO</a>). 
                          <strong>NOTE:</strong> Because we're using the free tier of Heroku, sometimes, the bot goes to sleep - if you don't get a reponse the first time, wait a moment and try again.
                          Built with Twilio, Node.JS, and Heroku. Code can be found <a href="https://github.com/saieedgeorge0/covid-hotline-bling" target="_blank">here</a>.
@@ -96,7 +96,7 @@
                 <span class="p-name">API</span>
                 <div class="expand-project">
                     <div class="p-description" id="description2">
-                        This will allow any user to access <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a>' COVID-19 case/death data for the county of any zipcode.
+                        This will allow any user to access <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target="_blank">The New York Times</a>' COVID-19 case/death data for the county of any zipcode.
                         <br> Use it via a simple GET request, replacing the below zipcode with any zipcode:
                         <div class="code-chunk">
                             <code>http://covid-hotline-bling.herokuapp.com/zipcode/44106</code>
@@ -116,9 +116,11 @@
                 <span class="p-name">Visualization</span>
                 <div class="expand-project">
                     <div class="p-description">
-                        You can view the cases/deaths by county using the map below. Data comes from <a href="https://github.com/nytimes/covid-19-data" target="_blank">The New York Times</a>, and it is automatically updated everytime they add new data. 
-                        Heatmap was generated using logarathmic transformation of the data, in order to generate a better visual despite the presence of any outliers. Created using Leaflet in R Studio.
+                        You can view the cases/deaths by county using the map below. Data comes from <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target="_blank">The New York Times</a>, and it is automatically updated everytime they add new data. 
+                        Heatmap was generated using logarathmic transformation of the data. Created using Leaflet in R Studio. Code can be found <a href="http://github.com/ekkendall/COVID-Heatmap" target="_blank">here</a>. <a href="http://ekkendall.github.io/COVID-Heatmap/" target="_blank">Click here</a>
+                        to view full screen.
                     </div>
+                    <iframe style="margin-top: 50px; width: 100%; height: 75vh;" src="http://ekkendall.github.io/COVID-Heatmap/"></iframe>
                 </div>
             </div>
         </div>
