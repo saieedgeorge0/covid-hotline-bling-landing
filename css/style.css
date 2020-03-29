@@ -487,6 +487,9 @@
     }
     
     @media (max-width: 514px) {
+        body {
+            text-align: center;
+        }
         .me {
             padding: 0px 20px 0px;
         }
@@ -506,7 +509,7 @@
         .description,
         .p-description,
         #pd1 {
-            font-weight: 400;
+            font-weight: 600;
         }
     }
     
