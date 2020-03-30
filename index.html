@@ -104,6 +104,34 @@
                         <br>It will return a JSON object with the FIPS code for the county, number of cases, deaths, and the last time the data was updated:
                         <div class="code-chunk">
                             <code>{"fips":"39035", "cases":330, "deaths":2, "recentdate":"2020-03-27"}</code>
+                        </div> <br>
+                        You can also get all the data <strong>associated with FIPS codes that only includes the most up-to-date total of cases and deaths</strong> by making the following GET request:
+                        <div class="code-chunk">
+                            <code>http://covid-hotline-bling.herokuapp.com/zipcode/dataallfips</code>
+                        </div> <br>
+                        It will return an array of all JSON objects with all most recent data associated with FIPS codes:
+                        <div class="code-chunk">
+                            <code>
+                                [ <br>
+                                    { <br>
+                                        &nbsp;&nbsp;&nbsp;"date":"2020-03-28",<br>
+                                        &nbsp;&nbsp;&nbsp;"county":"Snohomish",<br>
+                                        &nbsp;&nbsp;&nbsp;"state":"Washington",<br>
+                                        &nbsp;&nbsp;&nbsp;"fips":"53061",<br>
+                                        &nbsp;&nbsp;&nbsp;"cases":912,<br>
+                                        &nbsp;&nbsp;&nbsp;"deaths":23
+                                    }, <br>
+                                    {<br>
+                                        &nbsp;&nbsp;&nbsp;"date":"2020-03-28",<br>
+                                        &nbsp;&nbsp;&nbsp;"county":"Cook",<br>
+                                        &nbsp;&nbsp;&nbsp;"state":"Illinois",<br>
+                                        &nbsp;&nbsp;&nbsp;"fips":"17031",<br>
+                                        &nbsp;&nbsp;&nbsp;"cases":2613,<br>
+                                        &nbsp;&nbsp;&nbsp;"deaths":28 <br>
+                                    },<br>
+                                    [...]<br>
+                                ]
+                            </code>
                         </div>
                         <br> Built with Node.JS and Heroku. Code can be found <a href="https://github.com/saieedgeorge0/covid-hotline-bling" target="_blank">here</a>.
                     </div>
