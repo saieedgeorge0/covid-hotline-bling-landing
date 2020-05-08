@@ -107,9 +107,10 @@
                         </div> <br>
                         You can also get all the data <strong>associated with FIPS codes that only includes the most up-to-date total of cases and deaths</strong> by making the following GET request:
                         <div class="code-chunk">
-                            <code>http://covid-hotline-bling.herokuapp.com/zipcode/dataallfips</code>
+                            <code>http://covid-hotline-bling.herokuapp.com/dataallfips/notraw</code>
                         </div> <br>
-                        It will return an array of all JSON objects with all most recent data associated with FIPS codes:
+                        It will return an array of all JSON objects with all most recent data associated with FIPS codes. You can also
+                        request /dataallfips/raw to access the raw, unprocessed data.
                         <div class="code-chunk">
                             <code>
                                 [ <br>
